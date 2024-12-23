@@ -1,6 +1,7 @@
+import { Button } from '@/components/ui/button'
+
 export default function Home() {
-return (
-    <div style={{ color: 'blue', fontSize: '20px' }}>hello world</div>
-);
+    return <div className='mt-40'>
+       <Button variant="destructive">Click</Button>
+  </div>
 }
-// 
