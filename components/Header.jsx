@@ -4,7 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { LayoutDashboardIcon, PenBoxIcon } from 'lucide-react'
-const Header = () => {
+import checkUser from '@/lib/checkUser'
+const Header = async() => {
+    await checkUser()
   return (
     <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto flex justify-between items-center py-4 px-4">
