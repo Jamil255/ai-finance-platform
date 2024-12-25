@@ -1,9 +1,8 @@
-![Banner](./banner.jpeg)
-
 # Welth
 
 Welth is a modern web application built with Next.js and integrates advanced tools like Prisma, TailwindCSS, Clerk for authentication, and several Radix UI components. This project also leverages tools like generative AI, email components, and data visualization libraries to create a seamless user experience.
 
+<img width="1470" alt="Screenshot 2024-12-10 at 9 45 45 AM" src="https://github.com/user-attachments/assets/1bc50b85-b421-4122-8ba4-ae68b2b61432">
 ## Features
 
 - ✨ **Authentication**: Powered by Clerk for user management and authentication.
