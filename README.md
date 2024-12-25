@@ -99,6 +99,7 @@ INNGEST_API_KEY=your_inngest_api_key
 - 📊 [Recharts](https://recharts.org/)
 - ✉️ [React Email](https://react.email/)
 - ⚡ [Inngest](https://www.inngest.com/)
+- ⚡[Arcjet](https://www.arcjet.com/)
 
 ## Folder Structure
 
