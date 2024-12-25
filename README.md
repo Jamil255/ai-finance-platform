@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Banner](./banner.jpeg)
 
-## Getting Started
+# Welth
 
-First, run the development server:
+Welth is a modern web application built with Next.js and integrates advanced tools like Prisma, TailwindCSS, Clerk for authentication, and several Radix UI components. This project also leverages tools like generative AI, email components, and data visualization libraries to create a seamless user experience.
+
+## Features
+
+- ✨ **Authentication**: Powered by Clerk for user management and authentication.
+- 🤖 **Generative AI**: Integrates Google Generative AI to provide intelligent features.
+- 🗄️ **Database Management**: Prisma for database handling and schema management.
+- 🎨 **UI Components**: Radix UI and TailwindCSS for a highly customizable and responsive UI.
+- ✉️ **Email Support**: React Email components for crafting beautiful emails.
+- 📊 **Data Visualization**: Recharts for interactive data representations.
+- 🔧 **Server-side Functions**: Includes server-side scripts and APIs.
+- ⚡ **Asynchronous Workflows**: Powered by Inngest for managing event-driven workflows.
+- 🛠️ **Linting & Formatting**: Ensures code quality with ESLint.
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+- 🖥️ Node.js (>= 18.x)
+- 📦 npm (>= 8.x)
+- 🐘 PostgreSQL (if using Prisma locally)
+
+## Installation
+
+Clone the repository and navigate into the project directory:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd welth
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm install ---legacy-peer-deps
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Set up environment variables by creating a `.env` file in the root directory. Use the following format:
 
-## Learn More
+```env
+DATABASE_URL=your_database_url
+NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_api_key
+CLERK_API_KEY=your_clerk_api_secret
+INNGEST_API_KEY=your_inngest_api_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Scripts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🏗️ `npm run dev`: Starts the development server with Turbopack.
+- ✉️ `npm run email`: Starts the email development server.
+- 🏢 `npm run build`: Builds the application for production.
+- 🚀 `npm run start`: Starts the production server.
+- 🔍 `npm run lint`: Runs ESLint for code linting.
+- 🛠️ `npm run postinstall`: Generates Prisma Client after installation.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. 🚀 Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. 🌐 Access the app at [http://localhost:3000](http://localhost:3000).
+
+3. 🏗️ Build the app for production:
+
+   ```bash
+   npm run build
+   ```
+
+4. 🚀 Start the production server:
+
+   ```bash
+   npm run start
+   ```
+
+## Tech Stack
+
+### Frontend
+
+- ⚡ [Next.js](https://nextjs.org/)
+- 🎨 [TailwindCSS](https://tailwindcss.com/)
+- 🧩 [Radix UI](https://www.radix-ui.com/)
+- ⚛️ [React](https://reactjs.org/)
+
+### Backend
+
+- 🗄️ [Prisma](https://www.prisma.io/)
+- 🔑 [Clerk](https://clerk.dev/)
+- 🐘 [Supabase](https://supabase.com/) (if integrated)
+
+### Tools
+
+- 🤖 [Google Generative AI](https://developers.google.com/ai)
+- 📊 [Recharts](https://recharts.org/)
+- ✉️ [React Email](https://react.email/)
+- ⚡ [Inngest](https://www.inngest.com/)
+
+## Folder Structure
+
+```
+welth/
+├── app/                # Application routes and components
+├── prisma/             # Prisma schema and migrations
+├── public/             # Public assets
+├── styles/             # Global styles
+├── lib/                # Utility libraries
+├── pages/              # Legacy pages directory (if used)
+└── README.md           # Project documentation
+```
+
+## Contributing
+
+Contributions are welcome! Follow these steps:
+
+1. 🍴 Fork the repository.
+2. 🌱 Create a feature branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. 💾 Commit your changes:
+   ```bash
+   git commit -m "Description of feature"
+   ```
+4. 📤 Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. 🔁 Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgments
+
+- 📖 [Next.js Documentation](https://nextjs.org/docs)
+- 📖 [Prisma Documentation](https://www.prisma.io/docs)
+- 📖 [Clerk Documentation](https://clerk.dev/docs)
+- 📖 [Radix UI Documentation](https://www.radix-ui.com/docs)
+- 📖 [Inngest Documentation](https://www.inngest.com/docs)
+
