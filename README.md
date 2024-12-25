@@ -14,6 +14,7 @@ Welth is a modern web application built with Next.js and integrates advanced too
 - 🔧 **Server-side Functions**: Includes server-side scripts and APIs.
 - ⚡ **Asynchronous Workflows**: Powered by Inngest for managing event-driven workflows.
 - 🛠️ **Linting & Formatting**: Ensures code quality with ESLint.
+- 🛠️**Bot Protection**: Arcjet might be used to protect the web application from bots, ensuring that only legitimate users can interact with the app. It could be helping to prevent automated abuse or traffic that might affect performance or security.
 
 ## Prerequisites
 
